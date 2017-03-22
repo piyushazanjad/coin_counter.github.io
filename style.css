@@ -1,0 +1,155 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 64px auto;
+  max-width: 640px;
+  width: 94%;
+  text-align: center;
+}
+
+/**
+ * Circle Styles
+ */
+
+.circle {
+  position: relative;
+  display: block;
+  margin: 2em 0;
+  background-color: transparent;
+  color: #222;
+  text-align: center;
+}
+
+.circle:after {
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #ddd;
+  content: "";
+}
+
+.circle__inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circle__wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.circle__content {
+  display: table-cell;
+  padding: 1em;
+  vertical-align: middle;
+      color: grey;
+}
+
+input {
+  width: 100%;
+  }
+
+.btn-primary,
+.btn-primary:active:focus,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: #ffffff;
+  background-color: black;
+  border-color: black;
+  border-radius: 0px;
+}
+
+.badge1{
+    position: absolute;
+    background: black;
+    border: black;
+    height: 15%;
+    width: 15%;
+    border-radius: 100px;
+    right: 8%;
+    top: 7%;
+    color: white;
+ display: none;
+ text-align: center;
+ }
+ 
+ 
+ .text_style{
+   text-align: center;
+   margin: auto;
+   font-size: 1.8em;
+ }
+ 
+ 
+ button, input, optgroup, select, textarea {
+  background: #F8F8F8 ;
+    border-color: lightgrey;
+    border-width: 0.2px;
+}
+
+#sum{
+  text-align: right;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 400px) {
+
+   .badge1 .text_style { font-size: 1.5em; }
+
+}
+
+@media only screen and (max-width: 338px) {
+
+   .badge1 .text_style { font-size: 1.2em; }
+
+}
+
+@media only screen and (max-width: 278px) {
+
+   .badge1 .text_style { font-size: 1em; }
+
+}
+
+@media only screen and (max-width: 200px) {
+
+   .badge1 .text_style { font-size: 0.8em; }
+
+}
+
+@media (min-width: 480px) {
+  .circle__content {
+    font-size: 2em;
+        color: grey;
+  }
+    }
+
+@media (min-width: 768px) {
+  .circle__content {
+    font-size: 4em;
+        color: grey;
+  }
+}
+
+@media (min-width:768px){
+    h3 {
+        font-size: 2em;
+    }
+}
